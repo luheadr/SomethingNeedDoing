@@ -115,7 +115,7 @@ function collect_all()
     while((actions_left() > 0) and IsAddonReady("GatheringMasterpiece")) do
         --Ends function if function called without any scouring
         if (current_coll() == 0) then return end
-
+        gain_more_action()
         Id_Print("Actions left: "..actions_left())
         action("Collect")
     end
